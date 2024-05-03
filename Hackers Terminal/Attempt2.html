@@ -3,33 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacker's Terminal</title>
-    <script src="script.js"></script>
+    <title>Document</title>
 </head>
-
+<script src="Attempt2.js"></script>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
     body{
-        background-color: #00FF00;
+        background: black;
+        color: green;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px;
     }
 
-    #terminal{
-        font-family: monospace;
-        font-size: 14px;
+    .dots{
+        border: 3px solid green;
+        border-radius: 50%;
+        margin: 0 2px;
+        background: green;
+        display: block;
+        display: inline-block;
+        animation-name: blinking;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
     }
 
-    .blinking{
-        animation: blink 1s infinite;
-    }
-
-    @keyframes blink{
-        0%{
+    @keyframes blinking{
+        from{
             opacity: 1;
         }
-        50%{
+        to{
             opacity: 0;
-        }
-        100%{
-            opacity: 1;
         }
     }
 </style>
@@ -45,11 +56,5 @@
     The Three dots must blink so it looks like a real terminal.
 
     -->
-
-
-
-    <div id="terminal">
-        <span id="output"></span>
-    </div>
 </body>
 </html>

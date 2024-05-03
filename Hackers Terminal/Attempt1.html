@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Terminal</title>
+    <script src="script.js"></script>
+</head>
+
+
+
+<!-- ATTEMPT ONE 
+NOTE: DOESNT WORK. -->
+
+
+
+<style>
+    body{
+        background-color: #00FF00;
+    }
+
+    #terminal{
+        font-family: monospace;
+        font-size: 14px;
+    }
+
+    .blinking{
+        animation: blink 1s infinite;
+    }
+
+    @keyframes blink{
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+</style>
+<body>
+    <!-- Create a hackers terminal which has a green background and it shows these messages with random delay of 1 to 7 seconds 
+    Initializing Hacking...
+    Reading Your Files...
+    Password Files Detected...
+    Sending all Password and personal files to the server...
+    Cleaning up...
+    
+    
+    The Three dots must blink so it looks like a real terminal.
+
+    -->
+
+
+
+    <div id="terminal">
+        <span id="output"></span>
+    </div>
+</body>
+</html>
