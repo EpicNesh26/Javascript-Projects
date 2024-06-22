@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-    body{
+    body {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -16,22 +17,22 @@
         background-color: black;
     }
 
-    #color-change{
+    #color-change {
         width: 200px;
         height: 200px;
-        border: 1px solid red;
+        border: 2px solid white;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 10px;
-        
+        transition: background-color 0.5s ease;
         font-weight: bold;
         text-transform: uppercase;
         color: white;
 
     }
 
-    #colorbutton{
+    #colorbutton {
 
         padding: 10px 20px;
         font-size: 16px;
@@ -44,20 +45,24 @@
         border-radius: 4px;
     }
 
-    .button{
+    .button {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 </style>
+
 <body>
     <div id="color-change">
+        <p>
         Click button to change color
+        </p>
     </div>
     <div class="button">
-    <button id="colorbutton">Change Color</button>
+        <button id="colorbutton">Change Color</button>
     </div>
 
     <script src="index.js"> </script>
 </body>
+
 </html>
