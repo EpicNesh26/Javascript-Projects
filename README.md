@@ -5,11 +5,12 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Guidelines](#guidelines)
 - [License](#license)
 
 
 ### Project List
-### Below is a list of projects included in this repository, along with a brief description and the external reference used:
+Below is a list of projects included in this repository, along with a brief description and the external reference used:
 
 
 ### Installation
