@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+    }
+
+    #color-change{
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+
+    }
+
+    #colorbutton{
+
+        padding: 10px 20px;
+        font-size: 16px;
+
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: grey;
+        color: white;
+        border-radius: 4px;
+    }
+
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div id="color-change">
+        Click button to change color
+    </div>
+    <div class="button">
+    <button id="colorbutton">Change Color</button>
+    </div>
+
+    <script src="index.js"> </script>
+</body>
+</html>
