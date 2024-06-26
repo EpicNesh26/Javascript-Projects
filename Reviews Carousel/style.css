@@ -40,7 +40,7 @@ body {
     color: #555;
 }
 
-.prev-btn, .next-btn {
+.prev-btn , .next-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
