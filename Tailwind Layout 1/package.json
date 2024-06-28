@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "build": "postcss src/css/input.css -o src/css/output.css"
+  },
+  "dependencies": {
+    "postcss": "^8.4.38"
+  }
+}
