@@ -1,0 +1,21 @@
+.card{
+  border: 2px solid black;
+  max-width: 23vw;
+
+}
+
+.container{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav,ul{
+  display: flex;
+  gap: 10px;
+  
+}
+
+li{
+  list-style: none;
+}
