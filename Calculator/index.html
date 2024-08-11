@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+</head>
+<style>
+    .calculator {
+            width: 260px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        .display {
+            width: 100%;
+            height: 50px;
+            text-align: right;
+            margin-bottom: 20px;
+            font-size: 24px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .button {
+            padding: 20px;
+            font-size: 18px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .button:active {
+            background-color: #ccc;
+        }
+        .button.operator {
+            background-color: #ffa500;
+            color: white;
+        }
+        .button.clear {
+            background-color: #ff6347;
+            color: white;
+        }
+</style>
+<body>
+    <div class="calculator ">
+        <input type="text" class="display" id="display" readonly>
+        <div class="buttons ">
+            <div class="button" data-num="%">%</div>
+            <div class="button clearE">CE</div>
+            <div class="button clear">C</div>
+            <div class="button operator" data-op="/">/</div>
+            <div class="button" data-num="7">7</div>
+            <div class="button" data-num="8">8</div>
+            <div class="button" data-num="9">9</div>
+            <div class="button operator" data-op="*">*</div>
+            <div class="button" data-num="4">4</div>
+            <div class="button" data-num="5">5</div>
+            <div class="button" data-num="6">6</div>
+            <div class="button operator" data-op="-">-</div>
+            <div class="button" data-num="1">1</div>
+            <div class="button" data-num="2">2</div>
+            <div class="button" data-num="3">3</div>
+            <div class="button operator" data-op="+">+</div>
+            <div class="button integer">+/-</div>
+            <div class="button" data-num="0">0</div>
+            <div class="button" data-num=".">.</div>
+            <div class="button" id="equals">=</div>
+
+        </div>
+        <script src="calculator.js"></script>
+    </div>
+</body>
+</html>
