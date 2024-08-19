@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="/src/main.css">
+</head>
+
+<body class="flex flex-col align-middle justify-center p-5">
+    <div class="container">
+        <div class="gallery grid grid-cols-3 gap-3 max-w-[800px] my-0 mx-auto">
+            <img class="w-full cursor-pointer rounded-lg transition-transform duration-300 hover:scale-105" src="images/Photo1.avif" alt="Photo 1">
+            <img class="w-full cursor-pointer rounded-lg transition-transform duration-300 hover:scale-105" src="images/Photo2.avif" alt="Photo 2">
+            <img class="w-full cursor-pointer rounded-lg transition-transform duration-300 hover:scale-105" src="images/Photo3.avif" alt="Photo 3">
+            <img class="w-full cursor-pointer rounded-lg transition-transform duration-300 hover:scale-105" src="images/Photo4.avif" alt="Photo 4">
+            <img class="w-full cursor-pointer rounded-lg transition-transform duration-300 hover:scale-105" src="images/Photo5.avif" alt="Photo 5">
+ 
+        </div>
+        <div class="modal hidden fixed top-0 left-0 w-full h-full bg-black justify-center align-middle z-50" id="modal">
+            <span class="close absolute top-[20px] right-[20px] text-white text-3xl cursor-pointer" id="closebtn">&times;</span>
+            <img class="max-w-[90%] mt-8 max-h-[90%] rounded-lg" id="modalImg" src="" alt="Modal Image">
+        </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
